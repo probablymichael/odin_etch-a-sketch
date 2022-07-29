@@ -1,1 +1,16 @@
-# odin_etch-a-sketch
+# Etch-a-Sketch (The Odin Project)
+
+:computer: This project is part of the JavaScript Basics, which is in the Foundations.
+
+:phone: In this project, we were asked to create a **etch-a-sketch** board, *pretty old game isnt it?*
+
+:minidisc: The skills needed for this project were the mostly DOM-based.
+
+# Warning
+
+:warning: Before critiquing this project, keep in mind that it's not fully complete.
+
+From what I've seen, it has grid-based issues (grid meaning the board) when trying to add my footer at the bottom and when trying 99x99 it was **extremely** laggy and the board kind of broke.
+
+I'll soon work on improving my code and generally my understanding of set code.
+Peace!
