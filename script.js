@@ -7,17 +7,37 @@ const rainbow_mode = document.querySelector('.rainbow-color')
 let size;
 function promptQuestion(){
     let size = prompt('Give me a number bigger than 16 and smaller than 100', 16)
+    // FORGET ABOUT THIS
+    // if (size !== Number){
+    //     alert('Error: Numbers only')
+    //     promptQuestion()
+    // } else if (size >= 16 && size < 100){
+    //     return size
+        
+    // } else if (size < 16 || size > 100){
+    //     alert('Error: Numbers bigger than 16 and smaller than 100')
+    //     promptQuestion()
+    // }
+
     if (size >= 16 && size < 100){
         return size
+        
     } else if (size < 16 || size > 100){
         alert('Error: Numbers bigger than 16 and smaller than 100')
         promptQuestion()
+    } else if (size !== Number){
+       alert('Error: Numbers only')
     }
 }
 
 function createDivs(){
     size = promptQuestion()
-    size_div.textContent = size + 'x' + size;
+    if (size == undefined){
+        promptQuestion
+    } else {
+        size_div.textContent = size + 'x' + size;
+    }
+
 
     let calc = 512 / size;
     for (let i = 0; i < size ** 2; i++){
