@@ -1,5 +1,7 @@
 # Etch-a-Sketch (The Odin Project)
 
+<div align='center'><b>:warning: - PROJECT DOESNT WORK AS INTENDED - NEEDS FIXING - :warning:</b></div>
+
 > Please check [this](#warning) before moving on.
 :computer: This project is part of the JavaScript Basics, which is in the Foundations.
 
