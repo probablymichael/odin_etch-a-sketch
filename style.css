@@ -1,13 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 
+:root{
+    --main-color: #FCF1E1;
+}
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border
 }
 
+html {
+    height: 100%;
+}
+
 body{
-    margin: 0;
-    padding: 0;
-    background: #FCF1E1;
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100%;
+
+    background: var(--main-color);
     font-family: 'Roboto Mono', sans-serif;
 }
 
@@ -33,10 +45,10 @@ body{
     width: 8rem;
     height: 2rem;
 
-    border: #FCF1E1;
+    border: var(--main-color);
 
     background: #36454f;
-    color: #FCF1E1;
+    color: var(--main-color);
 
     border-radius: 25px;
     box-shadow:  5px 5px 10px #778899;
@@ -59,7 +71,7 @@ body{
 }
 
 #eas-cont{
-    border: 1px solid #FCF1E1;
+    border: 1px solid --main-color;
     box-shadow: 2.5px 5px 20px #778899, 10px 10px 5px #778899;
 
     height: 512px;
@@ -70,9 +82,13 @@ body{
 }
 
 /* btn options */
+#btns{
+    display: flex;
+    justify-content: center;
+}
+
 #btn-cont{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -81,20 +97,21 @@ body{
     border-radius: 20px;
     box-shadow:  5px 5px 10px #778899;
 
-    height: 206px;
-    width: 206px;
+    height: 75px;
+    width: 412px;
 
-    margin-left: -250px;
+    margin: 50px 0 75px 0;
+    padding: 0 16px;
 }
 
 .normal-color{
     width: 10rem;
     height: 2rem;
 
-    border: #FCF1E1;
+    border: var(--main-color);
 
     background: #36454f;
-    color: #FCF1E1;
+    color: var(--main-color);
 
     border-radius: 25px;
     box-shadow:  5px 5px 10px #778899;
@@ -110,10 +127,10 @@ body{
     width: 10rem;
     height: 2rem;
 
-    border: #FCF1E1;
+    border: var(--main-color);
 
     background: #36454f;
-    color: #FCF1E1;
+    color: var(--main-color);
 
     border-radius: 25px;
     box-shadow:  5px 5px 10px #778899;
@@ -128,12 +145,12 @@ body{
     width: 10rem;
     height: 2rem;
 
-    border: #FCF1E1;
+    border: var(--main-color);
     box-shadow:  5px 5px 10px #778899;
     border-radius: 25px;
 
     background: #36454f;
-    color: #FCF1E1;
+    color: var(--main-color);
 
     transition: .5s ease-in-out;
 }
@@ -148,12 +165,11 @@ body{
     justify-content: center;
     align-items: center;
 
-    position: fixed;
-    bottom: 0;
+    margin-top: auto;
     
     width: 100%;
     height: 50px;
-    background-color: #f3e4cc;
+    background-color: var(--main-color);
     color: #42506B;
 
     box-shadow:  0 -2px 12.5px #778899;
